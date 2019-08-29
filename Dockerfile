@@ -17,4 +17,4 @@ RUN set -ex \
         Requests furl html5lib flask \
         PyParsing decorator more-itertools \
         fabric chardet click \
-  ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
+  ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
