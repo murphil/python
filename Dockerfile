@@ -9,7 +9,6 @@ RUN set -ex \
 ENV PYTHONUNBUFFERED=x
 
 RUN set -ex \
-  ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
   ; pip3 --no-cache-dir install ipython \
         cachetools config transitions chronyk fn.py \
         SciPy Numpy numpydoc Scikit-learn scikit-image Pandas numba \
@@ -17,4 +16,5 @@ RUN set -ex \
         Statsmodels SymPy Gensim numexpr NLTK networkx \
         Requests furl html5lib flask \
         PyParsing decorator more-itertools \
-        fabric chardet click
+        fabric chardet click \
+  ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
