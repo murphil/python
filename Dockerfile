@@ -1,4 +1,4 @@
-FROM nnurphy/deb
+FROM nnurphy/deb:py
 
 RUN set -ex \
   ; apt-get update \
