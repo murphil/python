@@ -1,11 +1,5 @@
 FROM nnurphy/deb
 
-RUN set -ex \
-  ; apt-get update \
-  ; apt-get install -y --no-install-recommends \
-        python3 python3-pip python3-setuptools \
-  ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
-
 ENV PYTHONUNBUFFERED=x
 
 RUN set -ex \
