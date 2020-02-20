@@ -3,9 +3,9 @@ FROM nnurphy/deb
 ENV PYTHONUNBUFFERED=x
 
 RUN set -ex \
-  ; apt-get update \
-  ; apt-get install -y --no-install-recommends python3-setuptools \
-  ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
+  #; apt-get update \
+  #; apt-get install -y --no-install-recommends python3-setuptools \
+  #; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
   ; pip3 --no-cache-dir install \
         cachetools config transitions chronyk fn.py \
         SciPy Numpy numpydoc Scikit-learn scikit-image Pandas numba \
