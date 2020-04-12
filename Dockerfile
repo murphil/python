@@ -2,10 +2,12 @@ FROM nnurphy/deb
 
 ENV PYTHONUNBUFFERED=x
 
-RUN set -ex \
-  #; apt-get update \
-  #; apt-get install -y --no-install-recommends python3-setuptools \
-  #; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
+RUN set -eux \
+  ; apt-get update -y \
+  ; DEBIAN_FRONTEND=noninteractive \
+    apt-get install -y --no-install-recommends \
+    python3 python3-pip python3-setuptools ipython3 \
+  ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
   ; pip3 --no-cache-dir install \
         cachetools config transitions chronyk fn.py \
         SciPy Numpy numpydoc Scikit-learn scikit-image Pandas numba \
