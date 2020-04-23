@@ -1,4 +1,4 @@
-FROM nnurphy/deb
+FROM nnurphy/ub
 
 ENV PYTHONUNBUFFERED=x
 
