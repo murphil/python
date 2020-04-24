@@ -13,7 +13,7 @@ RUN set -eux \
         SciPy Numpy numpydoc Scikit-learn scikit-image Pandas numba \
         matplotlib Seaborn Bokeh \
         Statsmodels SymPy Gensim numexpr NLTK networkx \
-        Requests furl html5lib flask pyyaml \
+        fastapi uvicorn Requests furl html5lib pyyaml \
         PyParsing decorator more-itertools \
         fabric chardet click \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
