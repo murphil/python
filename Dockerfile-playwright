@@ -21,4 +21,5 @@ RUN set -eux \
   ; python3 -m playwright install \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
+ENV DEBUG=pw:api
 # python3 -m playwright codegen
