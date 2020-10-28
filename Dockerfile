@@ -6,7 +6,7 @@ RUN set -eux \
   ; apt-get update -y \
   ; DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --no-install-recommends \
-    python3 python3-pip python3-setuptools ipython3 \
+    python3 python3-pip python3-setuptools ipython3 ptvsd \
   ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
   ; pip3 --no-cache-dir install \
         cachetools config pyyaml transitions chronyk fn.py \
