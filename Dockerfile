@@ -13,8 +13,7 @@ RUN set -eux \
         aiohttp aiohttp-requests \
         PyParsing decorator more-itertools \
         cachetools config pyyaml transitions chronyk fn.py \
-        SciPy Numpy numpydoc Scikit-learn scikit-image Pandas numba \
-        matplotlib Seaborn Bokeh \
-        Statsmodels SymPy Gensim numexpr NLTK networkx \
+        SciPy SymPy Numpy numexpr numba \
+        Pandas Statsmodels matplotlib Scikit-learn \
         fabric chardet click \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
