@@ -6,9 +6,9 @@ RUN set -eux \
   ; apt-get update -y \
   ; DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --no-install-recommends \
-    python3 python3-pip python3-setuptools ipython3 ptvsd \
+    python3 python3-pip python3-setuptools ipython3 \
   ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
-  ; pip3 --no-cache-dir install \
+  ; pip3 --no-cache-dir install ptvsd \
         cachetools config pyyaml transitions chronyk fn.py \
         SciPy Numpy numpydoc Scikit-learn scikit-image Pandas numba \
         matplotlib Seaborn Bokeh \
