@@ -13,7 +13,7 @@ RUN set -eux \
         aiohttp aiohttp-requests \
         PyParsing decorator more-itertools \
         cachetools config pyyaml transitions chronyk fn.py \
-        SciPy SymPy Numpy numexpr numba \
-        Pandas Statsmodels matplotlib Scikit-learn \
+        SciPy SymPy Numpy numexpr Pandas \
+        Statsmodels matplotlib Scikit-learn \
         fabric chardet click \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
