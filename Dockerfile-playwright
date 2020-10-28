@@ -14,10 +14,10 @@ RUN set -eux \
         libpango-1.0-0 libcairo2 libgdk-pixbuf2.0-0 libasound2 libatspi2.0-0 \
   ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
   ; pip3 --no-cache-dir install ptvsd \
-        cachetools config pyyaml transitions chronyk fn.py \
         fastapi uvicorn Requests furl html5lib \
         aiohttp aiohttp-requests \
         PyParsing decorator more-itertools chardet click \
+        cachetools config pyyaml transitions chronyk fn.py \
         playwright \
   ; python3 -m playwright install \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
