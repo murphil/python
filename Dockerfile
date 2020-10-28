@@ -14,6 +14,7 @@ RUN set -eux \
         matplotlib Seaborn Bokeh \
         Statsmodels SymPy Gensim numexpr NLTK networkx \
         fastapi uvicorn Requests furl html5lib \
+        aiohttp aiohttp-requests \
         PyParsing decorator more-itertools \
         fabric chardet click \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
