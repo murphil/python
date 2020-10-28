@@ -36,7 +36,9 @@ RUN set -eux \
         -e 's!.*\(AuthorizedKeysFile\).*!\1 /etc/authorized_keys/%u!' \
         -e 's!.*\(GatewayPorts\).*!\1 yes!' \
         -e 's!.*\(PasswordAuthentication\).*yes!\1 no!' \
-  ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* \
+  ; apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
+
+RUN set -eux \
   ; wget -q -O /usr/local/bin/websocat ${websocat_url} \
     ; chmod a+x /usr/local/bin/websocat \
   ; wget -q -O- ${just_url} \
@@ -54,6 +56,4 @@ RUN set -eux \
         | tar zxvf - -C /usr/local/bin linux-amd64/helm --strip-components=1 \
   ; curl -L https://github.com/istio/istio/releases/download/${ISTIO_VERSION}/istio-${ISTIO_VERSION}-linux-amd64.tar.gz \
         | tar zxvf - -C /usr/local/bin istio-${ISTIO_VERSION}/bin/istioctl --strip-components=2
-
-
 
