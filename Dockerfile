@@ -12,8 +12,8 @@ RUN set -eux \
         fastapi uvicorn Requests furl html5lib \
         aiohttp aiohttp-requests \
         PyParsing decorator more-itertools \
-        cachetools config pyyaml transitions chronyk fn.py \
+        fabric typer hydra-core pyyaml \
+        cachetools transitions chronyk fn.py \
         SciPy SymPy Numpy numexpr Pandas \
         Statsmodels matplotlib Scikit-learn \
-        fabric click \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple

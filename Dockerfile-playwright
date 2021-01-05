@@ -16,8 +16,9 @@ RUN set -eux \
   ; pip3 --default-timeout=100 --no-cache-dir install ptvsd \
         fastapi uvicorn Requests furl html5lib \
         aiohttp aiohttp-requests \
-        PyParsing decorator more-itertools click \
-        cachetools config pyyaml transitions chronyk fn.py \
+        typer hydra-core pyyaml \
+        PyParsing decorator more-itertools \
+        cachetools transitions chronyk fn.py \
         playwright \
   ; python3 -m playwright install \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
