@@ -16,4 +16,8 @@ RUN set -eux \
         cachetools transitions chronyk fn.py \
         SciPy SymPy Numpy numexpr Pandas \
         Statsmodels matplotlib Scikit-learn \
+  \
+  ; nvim_home=/etc/skel/.config/nvim \
+  ; SKIP_CYTHON_BUILD=1 $nvim_home/plugged/vimspector/install_gadget.py --enable-python \
+  ; rm -f $nvim_home/plugged/vimspector/gadgets/linux/download/debugpy/*/*.zip \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
