@@ -19,7 +19,7 @@ RUN set -eux \
 
 RUN set -eux \
   ; pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
-  ; pip3 --no-cache-dir install ptvsd \
+  ; pip3 --no-cache-dir install \
         fastapi uvicorn Requests furl html5lib \
         aiohttp aiohttp-requests \
         PyParsing decorator more-itertools \
@@ -27,4 +27,4 @@ RUN set -eux \
 
 
 WORKDIR /app
-CMD  ["python", "-m", "ptvsd", "--host", "0.0.0.0", "--port", "3000", "/app/server.py" ]
+CMD  ["python", "--host", "0.0.0.0", "--port", "3000", "/app/server.py" ]
