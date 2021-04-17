@@ -39,7 +39,7 @@ RUN set -ex \
   ; conda clean --all -f -y \
   #; pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
   ; pip --no-cache-dir install neovim \
-        torch torchvision pytorch-lightning \
+        tensorflow \
         transitions Requests furl html5lib envelopes \
         bash_kernel ipython-sql pgspecial jieba sh \
   ; python -m bash_kernel.install \
@@ -61,6 +61,7 @@ RUN set -ex \
   #; jupyter serverextension enable --py jupyterlab_git \
   #; jupyter labextension install @jupyterlab/git \
   #; jupyter labextension install jupyterlab-drawio \
+  #; jupyter labextension install @krassowski/jupyterlab_go_to_definition \
   ; rm -rf /usr/local/share/.cache/yarn \
   ; npm cache clean -f
 
