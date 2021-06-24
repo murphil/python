@@ -36,10 +36,9 @@ RUN set -ex \
         xz zlib zstd snappy \
         ca-certificates cryptography pyjwt \
         cffi zeromq libssh2 openssl pyzmq pcre \
-  ; conda install pytorch torchvision torchaudio -c pytorch -c nvidia \
   ; conda clean --all -f -y \
   ; pip --no-cache-dir install neovim \
-        pytorch-lightning \
+        torch torchvision torchaudio pytorch-lightning \
         transitions Requests furl html5lib envelopes \
         bash_kernel ipython-sql pgspecial jieba sh \
   ; python -m bash_kernel.install \
