@@ -1,4 +1,5 @@
-FROM fj0rd/io
+ARG REPO=fj0rd
+FROM ${REPO}/io
 
 ENV LANG=zh_CN.UTF-8
 ENV HOME=/root
