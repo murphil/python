@@ -27,7 +27,7 @@ RUN set -ex \
   ; conda update --all -y \
   ; conda install -c conda-forge -y IPython ipykernel ipyparallel jupyterlab=3 \
   ##################### RUN set -ex \
-  ; conda install -c anaconda tensorflow-gpu
+  ; conda install -c anaconda tensorflow-gpu \
   ; conda install -y \
         SciPy Numpy numpydoc Scikit-learn scikit-image Pandas numba \
         matplotlib-base Bokeh pyarrow \
